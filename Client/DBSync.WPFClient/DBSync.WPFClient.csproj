@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dotmim.Sync.Sqlite" Version="0.8.0" />
+    <PackageReference Include="Dotmim.Sync.Web.Client" Version="0.8.0" />
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.114.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DBSync.DAL">
+      <HintPath>..\Libs\DBSync.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="DBSync.Models">
+      <HintPath>..\Libs\DBSync.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="DBSync.Usecases">
+      <HintPath>..\Libs\DBSync.Usecases.dll</HintPath>
+    </Reference>
+    <Reference Include="MVVM.LTE">
+      <HintPath>..\Libs\MVVM.LTE.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
