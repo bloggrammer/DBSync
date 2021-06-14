@@ -69,6 +69,6 @@ Below are some of the features available in **DotMim.Sync**
 -   Sync Direction (Bidirectional, DownloadOnly, UploadOnly)
 -   SQL Server only: Support of change tracking/bulk operations with TVP
 
-**Documenation:** [DotMim.Sync Official Documentaion](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").
-**Source Code:** [DotMim.Sync Source Code](https://github.com/Blogrammer/Dotmim.Sync "DotMim.Sync Framework ").
+**Documenation:** [DotMim.Sync Official Documentaion](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").<br/>
+**Source Code:** [DotMim.Sync Source Code](https://github.com/Blogrammer/Dotmim.Sync "DotMim.Sync Framework ").<br/>
 **More Code Examples:** [DotMim.Sync Samples](https://github.com/Mimetis/Dotmim.Sync/tree/master/Samples "DotMim.Sync Framework ").
