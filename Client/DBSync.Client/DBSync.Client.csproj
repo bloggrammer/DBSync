@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dotmim.Sync.Sqlite" Version="0.8.0" />
-    <PackageReference Include="Dotmim.Sync.SqlServer" Version="0.8.0" />
+    <PackageReference Include="Dotmim.Sync.Web.Client" Version="0.8.0" />
   </ItemGroup>
 
 </Project>

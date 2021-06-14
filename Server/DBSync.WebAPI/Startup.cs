@@ -1,8 +1,3 @@
-using DBSync.DAL.Configurations;
-using DBSync.DAL.Repositories;
-using DBSync.Models;
-using DBSync.Usecases;
-using DBSync.Usecases.Base;
 using Dotmim.Sync.SqlServer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,13 +18,9 @@ namespace DBSync.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // [Required] Get a connection string for your server data source
-            //var mySQLeConnectionString = Configuration.GetConnectionString("MySQLConnection");
             var sqlConnectionString = Configuration.GetConnectionString("SQLConnection");
 
             services.AddControllers();
-
-            services.AddSingleton(x => new SessionFactory(sqlConnectionString, DatabaseType.SQLServer));
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //  [Required] Mandatory to be able to handle multiple sessions
             services.AddMemoryCache();
@@ -41,7 +32,6 @@ namespace DBSync.WebAPI
 
 
             // Add a SqlSyncProvider acting as the server hub
-            // services.AddSyncServer<MySqlSyncProvider>(mySQLeConnectionString, tables); 
             services.AddSyncServer<SqlSyncProvider>(sqlConnectionString, tables);
         }
 

@@ -5,16 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dotmim.Sync.MySql" Version="0.8.0" />
     <PackageReference Include="Dotmim.Sync.SqlServer" Version="0.8.0" />
     <PackageReference Include="Dotmim.Sync.Web.Server" Version="0.8.0" />
-    <PackageReference Include="System.Data.SQLite" Version="1.0.114.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DBSync.DAL\DBSync.DAL.csproj" />
-    <ProjectReference Include="..\DBSync.Models\DBSync.Models.csproj" />
-    <ProjectReference Include="..\DBSync.Usecases\DBSync.Usecases.csproj" />
   </ItemGroup>
 
 
