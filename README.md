@@ -1,10 +1,22 @@
 # DBSync
-An example database Bi-Directional synchronization using DotMim.Sync (DMS) with Web API
+An example client and server databases synchronization using DotMim.Sync (DMS) with Web API
 
-**DotMim.Sync**  (**DMS**) is an easy to use framework for syncing relational databases, written in  **.Net Standard 2.0**.
+# DotMim.Sync  (DMS)
+**DotMim.Sync**  (**DMS**) is an easy to use framework for syncing relational databases, written in  **.Net Standard 2.0**. 
+DotMim.Sync is available for syncing  **SQL Server**,  **MySQL**,  **MariaDB**  and  **Sqlite**  databases. 
 
-DotMim.Sync is available for syncing  **SQL Server**,  **MySQL**,  **MariaDB**  and  **Sqlite**  databases. Learn more about DotMim.Sync [here](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").
+# DotMim.Sync  (DMS)  Features
+Below are some of the features available in **DotMim.Sync** 
+-   Multi databases support (SQL Server, MYSQL, SQLite)
+-   Conflict resolution
+-   Snapshot initialization
+-   Filters
+-   Custom serializers
+-   Mode TCP and HTTP through ASP.NET Core Web API
+-   Sync Direction (Bidirectional, DownloadOnly, UploadOnly)
+-   SQL Server only: Support of change tracking/bulk operations with TVP
 
+# Example Implementation
 This example application shows how relational databases can be synchronize using DotMim.Sync framework. In this example, the client database is set up to used SQLite while the server database has been configured to use SQL Server.
 
 On the Client side, we have two Console applications that sync the client local database with the server database and vice versa. This is Bi-directional sync and conflicts get resolve by DotMim.Sync framework. 
@@ -58,17 +70,7 @@ The Web API will be deployed on the Server-side which will be consumed by the cl
 
 **That's it!**
 
-### **DotMim.Sync**  (**DMS**)  Features
-Below are some of the features available in **DotMim.Sync** 
--   Multi databases support (SQL Server, MYSQL, SQLite)
--   Conflict resolution
--   Snapshot initialization
--   Filters
--   Custom serializers
--   Mode TCP and HTTP through ASP.NET Core Web API
--   Sync Direction (Bidirectional, DownloadOnly, UploadOnly)
--   SQL Server only: Support of change tracking/bulk operations with TVP
-
+# Learn More
 **Documenation:** [DotMim.Sync Official Documentaion](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").<br/>
 **Source Code:** [DotMim.Sync Source Code](https://github.com/Blogrammer/Dotmim.Sync "DotMim.Sync Framework ").<br/>
 **More Code Examples:** [DotMim.Sync Samples](https://github.com/Mimetis/Dotmim.Sync/tree/master/Samples "DotMim.Sync Framework ").
