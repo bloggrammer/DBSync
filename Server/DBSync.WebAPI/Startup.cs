@@ -23,13 +23,10 @@ namespace DBSync.WebAPI
             services.AddControllers();
 
             //  [Required] Mandatory to be able to handle multiple sessions
-            services.AddMemoryCache();
-
-           
+            services.AddMemoryCache();           
 
             // [Required] Add your database tables used for the sync process
             var tables = new string[] { "People" };
-
 
             // Add a SqlSyncProvider acting as the server hub
             services.AddSyncServer<SqlSyncProvider>(sqlConnectionString, tables);
