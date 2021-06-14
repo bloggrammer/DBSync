@@ -1,9 +1,9 @@
 # DBSync
 An example database Bi-Directional synchronization using DotMim.Sync (DMS) with Web API
 
-**DotMim.Sync**  (**DMS**) is an easy to use framework for syncing relational databases, written in  **.Net Standard 2.0**
+**DotMim.Sync**  (**DMS**) is an easy to use framework for syncing relational databases, written in  **.Net Standard 2.0**.
 
-Available for syncing  **SQL Server**,  **MySQL**,  **MariaDB**  and  **Sqlite**  databases. Learn more about DotMim.Sync [here](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").
+DotMim.Sync is available for syncing  **SQL Server**,  **MySQL**,  **MariaDB**  and  **Sqlite**  databases. Learn more about DotMim.Sync [here](https://dotmimsync.readthedocs.io/ "DotMim.Sync Framework ").
 
 This example application shows how relational databases can be synchronize using DotMim.Sync framework. In this example, the client database is set up to used SQLite while the server database has been configured to use SQL Server.
 
